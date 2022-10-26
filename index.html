@@ -4,70 +4,139 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Tacos El Jefe</title>
     </head>
     <body>
         <header>
            <h1>Taqueria</h1> 
         </header>
         
-        <img src="assets/img/logoTacos.png" alt="">
-        <h2>Menu</h2>
+        <section>
+        <img src="assets/img/logoTacos.png" alt="Logo tacos el jefe"/>
+
+        <h2>Menú</h2>
+        <h3>Tacos grandes</h3>
+        <p>Todos incluyen nopales y cebollas</p>
+        <ul>
+            <li>Bisteck ...... $30</li>
+            <li>Chorizo ...... $30</li>
+            <li>Chuleta ...... $30</li>
+            <li>Pastor ....... $30</li>
+            <li>Campechanos .. $30</li>
+        </ul>
+
+        <h3>Tacos pequeños</h3>
+        <p>Con cilantro y cebolla</p>
+        <ul>
+            <li>Bisteck ...... $15</li>
+            <li>Chorizo ...... $15</li>
+            <li>Chuleta ...... $15</li>
+            <li>Pastor ....... $15</li>
+            <li>Campechanos .. $15</li>
+        </ul>
+
+        <h3>Especiales</h3>
+        <p>Haz tu combo con refresco por $10 más</p>
+        <dl>
+            <dt><b>Labrador</b> ..... $40</dt>
+            <dd>- Tortilla de maiz con pollo asado</dd>
+            <dt><b>Pastor Aleman</b> ..... $40</dt>
+            <dd>- Tortilla de harina con carne de res y queso</dd>
+            <dt><b>Pug</b> .............. $40</dt>
+            <dd>- Tortilla de maiz con chuleta</dd>
+            <dt><b>Adoptado</b> ..... $40</dt>
+            <dd>- Tortilla de maiz con Pastor</dd>
+        </dl>
+    </section>
+
+        <hr>
+
+<section>
         <h2>Ubicación</h2>
         <h3>Sucursales</h3>
-        <table><tr>
-            <th>Nombre
-            </th>
-            
-            <th>Ubicación
-            </th>
-            <th>Horarios
-            </th>
-        </tr>
+        <table>
+            <tr>
+            <th>Nombre</th>
+            <th>Ubicación</th>
+            <th>Horarios</th>
+            </tr>
             <tr>
                 <td>Centro</td>
                 <td><a href="https://goo.gl/maps/Tm5RbXvQ9YrrSEai6" target="_blank">Sara 403</a></td>
-                <td>9 a 9</td>
+                <td>L - D 24H</td>
             </tr>
             <tr>
                 <td>Sur</td>
                 <td><a href="https://g.page/refaccionaria-franco?share" target="_blank">Emili 55</a></td>
-                <td>8 a 8</td>
+                <td>L - D 5pm -3am</td>
             </tr>
             <tr>
                 <td>Norte</td>
                 <td><a href="https://goo.gl/maps/Tm5RbXvQ9YrrSEai6" target="_blank">Juan 9</a></td>
-                <td>7 a 7</td>
+                <td>M - D 5pm - 3am</td>
             </tr>
         </table>
+    </section>
+
         <hr>
+
         <section name="seccion" id="seccion">
         <h2>Pedidos</h2>
         <h3>haz tu pedido aquí</h3>
-        <form>
-             <p>De que taqueria</p>
+    <form action="">
+             <p>¿De que taquería quieres?</p>
         <select>
-            <option value="Norte">Centro</option>
-            <option value="Norte">Sur</option>
             <option value="Norte">Norte</option>
+            <option value="Centro">Centro</option>
+            <option value="Sur">Sur</option>
         </select>
 
-        <p>De que taqueria</p>
-        <input type="checkbox" name="bistek" id="bistek" value="bistek">
-        <label for="bistek">bistek</label>
-        <input type="number" id="bistekNumber" name="bistekNumber" placeholder="¿Cuántos?">
-       <br><br>
-       
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="¿Nombre?"><br>
-        <label for="telefono">Telefono</label>
-        <input type="text" id="telefono" name="telefono" placeholder="¿Télefono?"><br>
-        <label for="direccion">Nombre</label>
-        <input type="text" id="direccion" name="direccion" placeholder="¿Dirección?"><br>
-        
+        <p>¿De que tacos quieres?</p>
+        <input type="checkbox" id="Bisteck" name="Bisteck" value="Bisteck">
+        <label for="Bisteck">Bisteck</label>
+        <input type="number" id="BisteckNumber" name="BisteckNumber" placeholder="¿Cuántos?">
         <br>
-        <button type="submit">Enviar Pedido</button>
+        <input type="checkbox" id="Chorizo" name="Chorizo" value="Chorizo">
+        <label for="Chorizo">Chorizo</label>
+        <input type="number" id="ChorizoNumber" name="ChorizoNumber" placeholder="¿Cuántos?">
+        <br>
+        <input type="checkbox" id="Pastor" name="Pastor" value="Pastor">
+        <label for="Pastor">Pastor</label>
+        <input type="number" id="PastorNumber" name="PastorNumber" placeholder="¿Cuántos?">
+        <br>
+        <input type="checkbox" id="Chuleta" name="Chuleta" value="Chuleta">
+        <label for="Chuleta">Chuleta</label>
+        <input type="number" id="ChuletaNumber" name="ChuletaNumber" placeholder="¿Cuántos?">
+        <br>
+        <input type="checkbox" id="Campechano" name="Campechano" value="Campechano">
+        <label for="bistek">Campechano</label>
+        <input type="number" id="CampechanoNumber" name="CampechanoNumber" placeholder="¿Cuántos?">
+        <br>
+
         <br><br>
+
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas?">
+
+        <br><br>
+
+        <label for="Teléfono">Teléfono</label><br>
+        <input type="text" id="Teléfono" name="Teléfono" placeholder="¿Tu télefono?">
+
+        <br><br>
+
+        <label for="Dirección">Dirección</label><br>
+        <input type="text" id="Dirección" name="Dirección" placeholder="¿A donde lo llevamos?">
+        
+        <br><br>
+
+        <button type="submit">Enviar Pedido</button>
+
+        <br><br>
+
     </form>
-        </section>
+    </section>
+
+
     </body>
 </html>
